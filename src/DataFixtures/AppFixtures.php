@@ -6,6 +6,7 @@ use App\Entity\Brand;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use App\Entity\User;
+use App\Entity\Advert;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AppFixtures extends Fixture
@@ -35,6 +36,7 @@ class AppFixtures extends Fixture
             $user->setRoles($row['roles']);
             $manager->persist($user);
         }*/
+
 
         $user1 = new User();
         $user1->setUsername('tarik');

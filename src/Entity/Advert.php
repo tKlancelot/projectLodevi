@@ -33,7 +33,7 @@ class Advert
     private $reference;
 
     /**
-     * @ORM\Column(type="decimal", precision=8, scale=2)
+     * @ORM\Column(type="float")
      * @Groups({"getAdvert","postAdvert"})
      */
     private $price;
@@ -82,6 +82,14 @@ class Advert
      */
     private $garage;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"getAdvert","postAdvert"})
+     */
+    private $picture;
+
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -99,17 +107,6 @@ class Advert
         return $this;
     }
 
-    public function getPrice(): ?string
-    {
-        return $this->price;
-    }
-
-    public function setPrice(string $price): self
-    {
-        $this->price = $price;
-
-        return $this;
-    }
 
     public function getDescription(): ?string
     {
@@ -191,6 +188,30 @@ class Advert
     public function setGarage(?Garage $garage): self
     {
         $this->garage = $garage;
+
+        return $this;
+    }
+
+    public function getPrice(): ?float
+    {
+        return $this->price;
+    }
+
+    public function setPrice(float $price): self
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    public function getPicture(): ?string
+    {
+        return $this->picture;
+    }
+
+    public function setPicture(?string $picture): self
+    {
+        $this->picture = $picture;
 
         return $this;
     }
