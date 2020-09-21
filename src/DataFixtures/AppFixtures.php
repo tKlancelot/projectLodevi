@@ -68,38 +68,47 @@ class AppFixtures extends Fixture
 
         $marque1 = new Brand();
         $marque1->setBrandLabel('Toyota');
+        $marque1->setBrandLogo('logo_toyota.jpg');
         $manager->persist($marque1);
 
         $marque2 = new Brand();
         $marque2->setBrandLabel('Mitsubishi');
+        $marque2->setBrandLogo('logo_mitsubishi.jpg');
         $manager->persist($marque2);
 
         $marque3 = new Brand();
         $marque3->setBrandLabel('Honda');
+        $marque3->setBrandLogo('logo_honda.jpg');
         $manager->persist($marque3);
 
         $marque4 = new Brand();
         $marque4->setBrandLabel('Peugeot');
+        $marque4->setBrandLogo('logo_peugeot.jpg');
         $manager->persist($marque4);
 
         $marque5 = new Brand();
         $marque5->setBrandLabel('Renault');
+        $marque5->setBrandLogo('logo_renault.png');
         $manager->persist($marque5);
 
         $marque6 = new Brand();
         $marque6->setBrandLabel('Citroën');
+        $marque6->setBrandLogo('logo_citroen.jpg');
         $manager->persist($marque6);
 
         $marque7 = new Brand();
         $marque7->setBrandLabel('Mercedes');
+        $marque7->setBrandLogo('logo_mercedes.jpg');
         $manager->persist($marque7);
 
         $marque8 = new Brand();
         $marque8->setBrandLabel('Kia');
+        $marque8->setBrandLogo('logo_kia.jpg');
         $manager->persist($marque8);
 
         $marque9 = new Brand();
         $marque9->setBrandLabel('Wolkswagen');
+        $marque9->setBrandLogo('logo_wolkswagen.jpg');
         $manager->persist($marque9);
 
 

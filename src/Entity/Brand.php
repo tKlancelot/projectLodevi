@@ -32,9 +32,17 @@ class Brand
     private $brandLabel;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups({"getBrand"})
+     */
+    private $brandLogo;
+
+
+    /**
      * @ORM\OneToMany(targetEntity=CarModel::class, mappedBy="brand")
      */
     private $carModels;
+
 
     public function __construct()
     {
@@ -85,6 +93,18 @@ class Brand
                 $carModel->setBrand(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getBrandLogo(): ?string
+    {
+        return $this->brandLogo;
+    }
+
+    public function setBrandLogo(?string $brandLogo): self
+    {
+        $this->brandLogo = $brandLogo;
 
         return $this;
     }

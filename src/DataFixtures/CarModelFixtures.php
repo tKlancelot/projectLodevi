@@ -16,7 +16,10 @@ class CarModelFixtures extends Fixture
     array('modelName' => 'civic', 'brand' => $this->getReference('marque3')),
     array('modelName' => '3008', 'brand' => $this->getReference('marque4')),
     array('modelName' => '308', 'brand' => $this->getReference('marque4')),
-    array('modelName' => 'clio', 'brand' => $this->getReference('marque5'))
+    array('modelName' => 'clio', 'brand' => $this->getReference('marque5')),
+    array('modelName' => 't-cross', 'brand' => $this->getReference('marque9')),
+    array('modelName' => 'class a', 'brand' => $this->getReference('marque7')),
+    array('modelName' => 'c-4', 'brand' => $this->getReference('marque6'))
     );
 
     foreach ($tab1 as $row) {

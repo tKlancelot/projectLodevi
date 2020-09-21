@@ -13,7 +13,8 @@
     <list default="true" id="23d45f6a-cd84-47fa-ab7a-33e8736bf6fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CarModelFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CarModelFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Brand.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +148,7 @@
       <workItem from="1600006425808" duration="15556000" />
       <workItem from="1600099745758" duration="18000" />
       <workItem from="1600507119186" duration="14282000" />
-      <workItem from="1600591025982" duration="1355000" />
+      <workItem from="1600591025982" duration="11169000" />
     </task>
     <servers />
   </component>
@@ -175,10 +176,10 @@
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
     <state x="693" y="288" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1600016588956" />
-    <state x="743" y="299" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600549163039">
+    <state x="743" y="299" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600694793099">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
-    <state x="743" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1007@0.27.1920.1007" timestamp="1600549163039" />
+    <state x="743" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1007@0.27.1920.1007" timestamp="1600694793099" />
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1599930318340" />
     <state x="624" y="242" key="run.anything.popup" timestamp="1600011152325">
       <screen x="0" y="27" width="1920" height="1007" />
