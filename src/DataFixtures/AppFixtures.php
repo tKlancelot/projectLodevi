@@ -6,7 +6,7 @@ use App\Entity\Brand;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use App\Entity\User;
-use App\Entity\Advert;
+use App\Entity\FuelType;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AppFixtures extends Fixture
@@ -20,22 +20,20 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-/*        $tab = array(
-            array('username' => 'peter', 'password' => 'password', 'roles' => array(0 => 'ROLE_USER')),
-            array('username' => 'sam', 'password' => 'password', 'roles' => array(0 => 'ROLE_USER')),
-            array('username' => 'tom', 'password' => 'password', 'roles' => array(0 => 'ROLE_USER')),
-            array('username' => 'tarik', 'password' => 'password', 'roles' => ['ROLE_ADMIN'])
+        $tab = array(
+            array('fuelTypeLabel' => 'essence'),
+            array('fuelTypeLabel' => 'diesel'),
+            array('fuelTypeLabel' => 'bio-ethanol'),
+            array('fuelTypeLabel' => 'bio-diesel'),
+            array('fuelTypeLabel' => 'electrique')
         );
 
         foreach ($tab as $row) {
 
-            $user = new User();
-            $user->setUsername($row['username']);
-            $encoded = $this->encoder->encodePassword($user, $row['password']);
-            $user->setPassword($encoded);
-            $user->setRoles($row['roles']);
-            $manager->persist($user);
-        }*/
+            $fuelType = new FuelType();
+            $fuelType->setFuelTypeLabel($row['fuelTypeLabel']);
+            $manager->persist($fuelType);
+        }
 
 
         $user1 = new User();

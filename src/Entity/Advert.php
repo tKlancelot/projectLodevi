@@ -12,7 +12,7 @@ use Symfony\Component\Serializer\Annotation\MaxDepth;
 /**
  * @ApiResource(
  *     denormalizationContext={"groups"={"postAdvert"}},
- *     normalizationContext={"groups"={"getAdvert","getModel","getBrand","getGarage","getUser"}})
+ *     normalizationContext={"groups"={"getAdvert","getModel","getBrand","getGarage","getUser","getFuelType"}})
  * )
  * @ORM\Entity(repositoryClass=AdvertRepository::class)
  */
@@ -50,11 +50,6 @@ class Advert
      */
     private $mileage;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @Groups({"getAdvert","postAdvert"})
-     */
-    private $fuelType;
 
     /**
      * @ORM\Column(type="date")
@@ -87,6 +82,12 @@ class Advert
      * @Groups({"getAdvert","postAdvert"})
      */
     private $picture;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=FuelType::class, inversedBy="adverts")
+     * @Groups({"getAdvert","postAdvert","getFuelType"})
+     */
+    private $fuelType;
 
 
 
@@ -132,17 +133,6 @@ class Advert
         return $this;
     }
 
-    public function getFuelType(): ?string
-    {
-        return $this->fuelType;
-    }
-
-    public function setFuelType(string $fuelType): self
-    {
-        $this->fuelType = $fuelType;
-
-        return $this;
-    }
 
     public function getReleaseYear(): ?\DateTimeInterface
     {
@@ -212,6 +202,18 @@ class Advert
     public function setPicture(?string $picture): self
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    public function getFuelType(): ?FuelType
+    {
+        return $this->fuelType;
+    }
+
+    public function setFuelType(?FuelType $fuelType): self
+    {
+        $this->fuelType = $fuelType;
 
         return $this;
     }
